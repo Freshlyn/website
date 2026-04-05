@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#d4edda"/>
+  <rect x="140" y="80" width="120" height="200" rx="16" fill="white" stroke="#8bc34a" stroke-width="3"/>
+  <rect x="140" y="80" width="120" height="50" rx="8" fill="#4a7c3f"/>
+  <rect x="155" y="60" width="90" height="30" rx="8" fill="#6b4226"/>
+  <text x="200" y="126" font-family="Arial" font-size="14" fill="white" text-anchor="middle" font-weight="bold">MILK</text>
+  <ellipse cx="200" cy="190" rx="40" ry="40" fill="#d4edda" opacity="0.5"/>
+  <text x="200" y="195" font-family="Arial" font-size="30" text-anchor="middle">🥛</text>
+  <text x="200" y="260" font-family="Arial" font-size="13" fill="#4a7c3f" text-anchor="middle" font-weight="bold">Farm Fresh</text>
+  <text x="200" y="278" font-family="Arial" font-size="11" fill="#6b4226" text-anchor="middle">Organic Cow Milk</text>
+  <text x="200" y="350" font-family="Arial" font-size="11" fill="#8bc34a" text-anchor="middle">Place your milk image here</text>
+  <text x="200" y="368" font-family="Arial" font-size="10" fill="#a0724a" text-anchor="middle">src/assets/milk.jpg</text>
+</svg>

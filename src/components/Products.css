@@ -1,0 +1,222 @@
+.products {
+  background: var(--cream);
+  padding: 96px 40px;
+  border-top: 1px solid var(--light-gray);
+}
+
+.products-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.products-header {
+  margin-bottom: 40px;
+}
+
+.section-eyebrow {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--green);
+  margin-bottom: 14px;
+}
+
+.products-heading {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(56px, 6vw, 88px);
+  font-weight: 800;
+  line-height: 0.95;
+  color: var(--black);
+  letter-spacing: -0.5px;
+}
+
+/* Tabs */
+.category-tabs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  padding-bottom: 32px;
+  border-bottom: 1.5px solid var(--light-gray);
+}
+
+.tab-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 20px;
+  border-radius: 9999px;
+  border: 2px solid var(--light-gray);
+  background: var(--white);
+  color: var(--gray);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.82rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.tab-pill:hover {
+  border-color: var(--green);
+  color: var(--green);
+}
+
+.tab-active {
+  border-color: var(--green) !important;
+  color: var(--green) !important;
+  background: var(--white) !important;
+  font-weight: 600 !important;
+}
+
+/* Featured card */
+.featured-card {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  margin-bottom: 40px;
+  border: 1.5px solid var(--light-gray);
+  background: var(--white);
+  overflow: hidden;
+}
+
+.featured-img-col {
+  position: relative;
+  height: 340px;
+}
+
+.featured-img-col img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.featured-label-strip {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.featured-label-strip span {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.strip-arrow {
+  font-size: 1.1rem !important;
+}
+
+.featured-text-col {
+  padding: 44px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.featured-category-tag {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--green);
+  margin-bottom: 12px;
+}
+
+.featured-name {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--black);
+  line-height: 1.05;
+  margin-bottom: 16px;
+}
+
+.featured-desc {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.85rem;
+  line-height: 1.8;
+  color: var(--gray);
+}
+
+/* Items block */
+.items-block {
+  border: 1.5px solid var(--light-gray);
+  background: var(--white);
+  padding: 32px 36px;
+}
+
+.items-block-header {
+  margin-bottom: 20px;
+}
+
+.items-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.items-seo {
+  font-family: 'Caveat', cursive;
+  font-size: 1rem;
+  color: var(--brown);
+}
+
+.items-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.item-chip {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.78rem;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  border: 1.5px solid var(--light-gray);
+  color: var(--off-black);
+  background: var(--cream);
+  transition: border-color 0.15s, color 0.15s;
+  cursor: default;
+}
+
+.item-chip:hover {
+  border-color: var(--green);
+  color: var(--green);
+}
+
+@media (max-width: 900px) {
+  .featured-card {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-img-col {
+    height: 240px;
+  }
+
+  .featured-text-col {
+    padding: 28px 24px;
+  }
+
+  .products {
+    padding: 64px 24px;
+  }
+
+  .items-block {
+    padding: 24px;
+  }
+}

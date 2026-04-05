@@ -1,0 +1,72 @@
+:root {
+  --green: #3a7d44;
+  --green-dark: #2a5e32;
+  --green-light: #e8f5e9;
+  --green-accent: #d4ed70;
+  --brown: #7c4a1e;
+  --brown-dark: #5a3210;
+  --brown-light: #f5ede3;
+  --cream: #fdfaf6;
+  --black: #1a1a1a;
+  --off-black: #231f20;
+  --gray: #767676;
+  --light-gray: #ebebeb;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  background: var(--white);
+  color: var(--off-black);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  line-height: 1.05;
+  color: var(--black);
+}
+
+.app {
+  overflow-x: hidden;
+}
+
+/* Shared pill button */
+.pill-btn {
+  display: inline-block;
+  padding: 10px 26px;
+  border-radius: 9999px;
+  font-family: 'Caveat', cursive;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 2.5px solid var(--green);
+  background: transparent;
+  color: var(--off-black);
+  letter-spacing: 0.2px;
+}
+
+.pill-btn:hover {
+  background: var(--green-accent);
+}
+
+.pill-btn-dark {
+  border-color: var(--off-black);
+}
+
+.pill-btn-dark:hover {
+  background: var(--light-gray);
+}
