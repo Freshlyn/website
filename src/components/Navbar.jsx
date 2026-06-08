@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 import logoImg from '../assets/logo.png';
 
@@ -23,6 +24,7 @@ export default function Navbar() {
           <li><a href="#products" onClick={() => setMenuOpen(false)}>Products</a></li>
           <li><a href="#usp" onClick={() => setMenuOpen(false)}>Specialties</a></li>
           <li><a href="#why" onClick={() => setMenuOpen(false)}>Why Us</a></li>
+          <li><Link to="/terms-and-conditions" onClick={() => setMenuOpen(false)}>Terms</Link></li>
         </ul>
       </div>
     </nav>

@@ -4,12 +4,23 @@
   box-sizing: border-box;
 }
 
+html,
 body {
-  margin: 0;
+  height: 100%;
+  overflow: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+height-width-100 {
+  height: 100%;
+  width: 100%;
+}
+
+/* #root is the single scroll container for the entire app.
+   All page scroll happens here — not on window — so navigating
+   between routes never carries over the previous scroll position. */
 #root {
   width: 100%;
+  height: 100%;
 }

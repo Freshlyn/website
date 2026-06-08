@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom';
 import './Footer.css';
+import logoImg from '../assets/logo.png';
 
 export default function Footer() {
   return (
@@ -31,15 +33,7 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-brand">
             <div className="footer-logo">
-              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
-                <circle cx="20" cy="20" r="19" fill="#3a7d44" />
-                <path d="M20 7 C13 13 9 18 11 25 C13 29 16.5 31.5 20 31.5 C23.5 31.5 27 29 29 25 C31 18 27 13 20 7Z" fill="#6abf69" />
-                <path d="M20 13 C20 13 15.5 20.5 17.5 26 C18.5 29 20 31.5 20 31.5" stroke="#e8f5e9" strokeWidth="1.6" fill="none" />
-              </svg>
-              <div>
-                <div className="footer-logo-name">FRESHLYN NATURE</div>
-                <div className="footer-logo-tag">Naturally Fresh Everyday</div>
-              </div>
+              <img src={logoImg} alt="Freshlyn Nature" className="footer-logo-img" />
             </div>
             <p className="footer-brand-desc">
               Farm-fresh organic, natural, and premium veg products directly to your doorstep.
@@ -47,6 +41,22 @@ export default function Footer() {
             <p className="footer-mission-line">
               "Our mission: a healthy, organic, chemical-free diet."
             </p>
+            <div className="footer-social">
+              <a href="https://www.instagram.com/freshlynnature?utm_source=qr&igsh=dmNpd2M1YXplejV3" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                  <circle cx="12" cy="12" r="4"/>
+                  <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+                </svg>
+                Instagram
+              </a>
+              <a href="https://www.facebook.com/share/18Zyb7sgva/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                </svg>
+                Facebook
+              </a>
+            </div>
           </div>
 
           <div className="footer-col">
@@ -83,7 +93,11 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <p>© 2024 Freshlyn Nature · 100% Pure Veg · Organic & Natural</p>
-          <p>FreshLyn Organic Veg Products | Pure Veg, Dairy & Bengal Sweets</p>
+          <p>
+            FreshLyn Organic Veg Products | Pure Veg, Dairy & Bengal Sweets
+            &nbsp;·&nbsp;
+            <Link to="/terms-and-conditions" className="footer-tnc-link">Terms & Conditions</Link>
+          </p>
         </div>
       </div>
 

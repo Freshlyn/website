@@ -90,18 +90,10 @@
   margin-bottom: 16px;
 }
 
-.footer-logo-name {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 1.1rem;
-  font-weight: 800;
-  color: white;
-  letter-spacing: 1px;
-}
-
-.footer-logo-tag {
-  font-family: 'Caveat', cursive;
-  font-size: 0.72rem;
-  color: #6abf69;
+.footer-logo-img {
+  height: 64px;
+  width: auto;
+  object-fit: contain;
 }
 
 .footer-brand-desc {
@@ -118,6 +110,31 @@
   font-weight: 600;
   color: #6abf69;
   font-style: italic;
+}
+
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.footer-social a {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.45);
+  text-decoration: none;
+  padding: 7px 14px;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 9999px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.footer-social a:hover {
+  color: #6abf69;
+  border-color: #6abf69;
 }
 
 .footer-col h4 {
@@ -162,6 +179,17 @@
   font-family: 'IBM Plex Mono', monospace;
   font-size: 0.72rem;
   color: rgba(255,255,255,0.3);
+}
+
+.footer-tnc-link {
+  color: rgba(255,255,255,0.45);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s;
+}
+
+.footer-tnc-link:hover {
+  color: #6abf69;
 }
 
 @media (max-width: 900px) {
