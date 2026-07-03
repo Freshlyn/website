@@ -1,0 +1,253 @@
+.md-wrapper {
+  height: 100%;
+  width: 100%;
+  background: #f7f8f6;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1a2e1a;
+}
+
+/* ── Header ── */
+.md-header {
+  background: #fff;
+  border-bottom: 1px solid #e5e9e5;
+  padding: 16px 40px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.md-back-link {
+  color: #3a7d44;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  transition: color 0.2s;
+}
+
+.md-back-link:hover {
+  color: #2c5f34;
+}
+
+.md-logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.md-logo-img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* ── Main container ── */
+.md-container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 56px 40px 72px;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+/* ── Hero ── */
+.md-hero {
+  margin-bottom: 36px;
+}
+
+.md-eyebrow {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #3a7d44;
+  background: #e9f4ea;
+  padding: 5px 12px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+}
+
+.md-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #16241a;
+  margin: 0 0 12px;
+  letter-spacing: -0.01em;
+}
+
+.md-intro {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #5b6b5b;
+  margin: 0;
+  max-width: 56ch;
+}
+
+/* ── Sections ── */
+.md-section {
+  margin-bottom: 32px;
+}
+
+.md-section-title {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #16241a;
+  margin: 0 0 14px;
+}
+
+.md-note {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: #6b7a6b;
+  margin: 14px 2px 0;
+}
+
+/* ── Info card ── */
+.md-card {
+  background: #ffffff;
+  border: 1px solid #e5e9e5;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(20, 30, 20, 0.04);
+}
+
+.md-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 16px 20px;
+}
+
+.md-row + .md-row {
+  border-top: 1px solid #eef1ee;
+}
+
+.md-icon {
+  flex: 0 0 auto;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: #eaf5ea;
+  color: #3a7d44;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.md-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.md-row-body {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding-top: 2px;
+  min-width: 0;
+}
+
+.md-row-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #93a093;
+}
+
+.md-row-value {
+  font-size: 0.96rem;
+  font-weight: 600;
+  color: #223022;
+  line-height: 1.55;
+}
+
+.md-row-value a {
+  color: #3a7d44;
+  text-decoration: none;
+  text-underline-offset: 3px;
+}
+
+.md-row-value a:hover {
+  text-decoration: underline;
+}
+
+/* ── FSSAI license card ── */
+.md-fssai-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: linear-gradient(135deg, #2c5f34, #3a7d44);
+  border-radius: 14px;
+  padding: 20px 22px;
+  box-shadow: 0 4px 14px rgba(44, 95, 52, 0.22);
+}
+
+.md-fssai-icon {
+  flex: 0 0 auto;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.md-fssai-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.md-fssai-body {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.md-fssai-body .md-row-label {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.md-fssai-number {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #fff;
+}
+
+/* ── Footer ── */
+.md-footer {
+  background: #2c5f34;
+  color: #c8e6c9;
+  text-align: center;
+  padding: 20px 40px;
+  font-size: 0.85rem;
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .md-header {
+    padding: 14px 20px;
+  }
+
+  .md-container {
+    padding: 36px 20px 56px;
+  }
+
+  .md-title {
+    font-size: 1.7rem;
+  }
+
+  .md-fssai-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

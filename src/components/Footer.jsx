@@ -97,6 +97,8 @@ export default function Footer() {
             FreshLyn Organic Veg Products | Pure Veg, Dairy & Bengal Sweets
             &nbsp;·&nbsp;
             <Link to="/terms-and-conditions" className="footer-tnc-link">Terms & Conditions</Link>
+            &nbsp;·&nbsp;
+            <Link to="/manufacturing-details" className="footer-tnc-link">Manufacturing Details</Link>
           </p>
         </div>
       </div>

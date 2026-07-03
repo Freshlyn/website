@@ -9,6 +9,7 @@ import USP from "./components/USP";
 import WhyChoose from "./components/WhyChoose";
 import Footer from "./components/Footer";
 import TermsAndConditions from "./components/TermsAndConditions";
+import ManufacturingDetails from "./components/ManufacturingDetails";
 
 function HomePage() {
   return (
@@ -32,6 +33,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+        <Route path="/manufacturing-details" element={<ManufacturingDetails />} />
       </Routes>
     </BrowserRouter>
   );

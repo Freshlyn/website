@@ -2,6 +2,54 @@ import { Link } from "react-router-dom";
 import "./TermsAndConditions.css";
 import logoImg from "../assets/logo.png";
 
+function IconMapPin() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+      <circle cx="12" cy="10" r="3" />
+    </svg>
+  );
+}
+
+function IconMail() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <rect x="2" y="4" width="20" height="16" rx="2" />
+      <path d="m22 6-10 7L2 6" />
+    </svg>
+  );
+}
+
+function IconGlobe() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <circle cx="12" cy="12" r="10" />
+      <path d="M2 12h20M12 2a15.3 15.3 0 0 1 0 20 15.3 15.3 0 0 1 0-20Z" />
+    </svg>
+  );
+}
+
 export default function TermsAndConditions() {
   return (
     <div className="tnc-wrapper">
@@ -330,21 +378,47 @@ export default function TermsAndConditions() {
             contact us:
           </p>
           <address className="tnc-contact">
-            <strong>Freshlyn Nature</strong>
-            <br />
-            Kolkata, West Bengal, India
-            <br />
-            Email:{" "}
-            <a href="mailto:info@freshlynnature.com">info@freshlynnature.com</a>
-            <br />
-            Website:{" "}
-            <a
-              href="https://www.freshlynnature.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              https://www.freshlynnature.com
-            </a>
+            <div className="tnc-row">
+              <span className="tnc-icon">
+                <IconMapPin />
+              </span>
+              <div className="tnc-row-body">
+                <span className="tnc-row-label">Address</span>
+                <span className="tnc-row-value">
+                  Freshlyn Nature, Kolkata, West Bengal, India
+                </span>
+              </div>
+            </div>
+            <div className="tnc-row">
+              <span className="tnc-icon">
+                <IconMail />
+              </span>
+              <div className="tnc-row-body">
+                <span className="tnc-row-label">Email</span>
+                <span className="tnc-row-value">
+                  <a href="mailto:info@freshlynnature.com">
+                    info@freshlynnature.com
+                  </a>
+                </span>
+              </div>
+            </div>
+            <div className="tnc-row">
+              <span className="tnc-icon">
+                <IconGlobe />
+              </span>
+              <div className="tnc-row-body">
+                <span className="tnc-row-label">Website</span>
+                <span className="tnc-row-value">
+                  <a
+                    href="https://freshlynnature.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    https://freshlynnature.com/
+                  </a>
+                </span>
+              </div>
+            </div>
           </address>
         </section>
 

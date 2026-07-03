@@ -121,19 +121,73 @@
 /* ── Contact block ── */
 .tnc-contact {
   font-style: normal;
-  font-size: 0.97rem;
-  line-height: 1.9;
-  color: #344f34;
-  background: #edf5ed;
-  border-left: 4px solid #3a7d44;
-  padding: 16px 20px;
-  border-radius: 6px;
+  background: #ffffff;
+  border: 1px solid #e5e9e5;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(20, 30, 20, 0.04);
   margin-top: 10px;
 }
 
-.tnc-contact a {
+.tnc-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 16px 20px;
+}
+
+.tnc-row + .tnc-row {
+  border-top: 1px solid #eef1ee;
+}
+
+.tnc-icon {
+  flex: 0 0 auto;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: #eaf5ea;
   color: #3a7d44;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tnc-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.tnc-row-body {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding-top: 2px;
+  min-width: 0;
+}
+
+.tnc-row-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #93a093;
+}
+
+.tnc-row-value {
+  font-size: 0.96rem;
+  font-weight: 600;
+  color: #223022;
+  line-height: 1.55;
+}
+
+.tnc-row-value a {
+  color: #3a7d44;
+  text-decoration: none;
   text-underline-offset: 3px;
+}
+
+.tnc-row-value a:hover {
+  text-decoration: underline;
 }
 
 /* ── Acknowledgement ── */
