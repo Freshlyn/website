@@ -24,6 +24,7 @@ export default function Navbar() {
           <li><a href="#products" onClick={() => setMenuOpen(false)}>Products</a></li>
           <li><a href="#usp" onClick={() => setMenuOpen(false)}>Specialties</a></li>
           <li><a href="#why" onClick={() => setMenuOpen(false)}>Why Us</a></li>
+          <li><Link to="/product-details" onClick={() => setMenuOpen(false)}>Product Details</Link></li>
           <li><Link to="/terms-and-conditions" onClick={() => setMenuOpen(false)}>Terms</Link></li>
         </ul>
       </div>

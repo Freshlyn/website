@@ -99,6 +99,8 @@ export default function Footer() {
             <Link to="/terms-and-conditions" className="footer-tnc-link">Terms & Conditions</Link>
             &nbsp;·&nbsp;
             <Link to="/manufacturing-details" className="footer-tnc-link">Manufacturing Details</Link>
+            &nbsp;·&nbsp;
+            <Link to="/product-details" className="footer-tnc-link">Product Details</Link>
           </p>
         </div>
       </div>

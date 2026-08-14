@@ -1,0 +1,339 @@
+/* #root is height-constrained and html/body have overflow:hidden (see
+   index.css), so this wrapper must be its own scroll container — otherwise
+   the page content is simply clipped and nothing scrolls. */
+.pd-wrapper {
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  background: #f7f8f6;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1a2e1a;
+}
+
+/* ── Header ── */
+.pd-header {
+  background: #fff;
+  border-bottom: 1px solid #e5e9e5;
+  padding: 16px 40px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.pd-back-link {
+  color: #3a7d44;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  transition: color 0.2s;
+}
+
+.pd-back-link:hover {
+  color: #2c5f34;
+}
+
+.pd-logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.pd-logo-img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* ── Main container ── */
+.pd-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 56px 40px 72px;
+}
+
+/* ── Hero ── */
+.pd-hero {
+  margin-bottom: 32px;
+}
+
+.pd-eyebrow {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #3a7d44;
+  background: #e9f4ea;
+  padding: 5px 12px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+}
+
+.pd-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 0 0 14px;
+  color: #1a2e1a;
+}
+
+.pd-intro {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #4a5a4a;
+  margin: 0;
+  max-width: 640px;
+}
+
+/* ── Category filters ── */
+.pd-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 44px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #e5e9e5;
+}
+
+.pd-filter {
+  font-family: inherit;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: #4a5a4a;
+  background: #fff;
+  border: 1.5px solid #e5e9e5;
+  border-radius: 999px;
+  padding: 9px 18px;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+
+.pd-filter:hover {
+  border-color: #bcd3bd;
+  color: #2c5f34;
+}
+
+.pd-filter-active {
+  background: #e9f4ea;
+  border-color: #3a7d44;
+  color: #2c5f34;
+}
+
+/* ── Category block ── */
+.pd-category {
+  margin-bottom: 52px;
+  scroll-margin-top: 90px;
+}
+
+.pd-category-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0 0 22px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pd-product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* ── Product card ── */
+.pd-card {
+  background: #fff;
+  border: 1px solid #e5e9e5;
+  border-radius: 16px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  scroll-margin-top: 90px;
+}
+
+.pd-card-media {
+  background: #eef2ee;
+}
+
+.pd-card-img {
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.pd-card-body {
+  padding: 26px 28px;
+}
+
+.pd-product-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0 8px;
+  color: #1a2e1a;
+}
+
+.pd-product-desc {
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: #4a5a4a;
+  margin: 0 0 22px;
+}
+
+/* ── Nutrition table ── */
+.pd-nutrition {
+  border: 1px solid #e5e9e5;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.pd-nutrition-head {
+  background: #f2f6f2;
+  padding: 12px 16px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #e5e9e5;
+}
+
+.pd-nutrition-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #2c5f34;
+}
+
+.pd-serving {
+  font-size: 0.78rem;
+  color: #6a7a6a;
+  font-weight: 600;
+}
+
+.pd-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.pd-table tr:not(:last-child) {
+  border-bottom: 1px solid #eef1ee;
+}
+
+.pd-table th {
+  text-align: left;
+  font-weight: 500;
+  color: #4a5a4a;
+  padding: 10px 16px;
+}
+
+.pd-table td {
+  text-align: right;
+  font-weight: 600;
+  color: #1a2e1a;
+  padding: 10px 16px;
+  white-space: nowrap;
+}
+
+/* ── Meta rows ── */
+.pd-meta {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pd-meta-row {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 12px;
+}
+
+.pd-meta-row dt {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #6a7a6a;
+  padding-top: 1px;
+}
+
+.pd-meta-row dd {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #2e3e2e;
+}
+
+/* ── Disclaimer ── */
+.pd-disclaimer {
+  font-size: 0.84rem;
+  line-height: 1.7;
+  color: #6a7a6a;
+  background: #fff;
+  border: 1px solid #e5e9e5;
+  border-radius: 12px;
+  padding: 18px 20px;
+  margin: 0;
+}
+
+/* ── Footer ── */
+.pd-footer {
+  border-top: 1px solid #e5e9e5;
+  background: #fff;
+  padding: 24px 40px;
+  text-align: center;
+}
+
+.pd-footer p {
+  margin: 0;
+  font-size: 0.82rem;
+  color: #6a7a6a;
+}
+
+/* ── Responsive ── */
+@media (max-width: 760px) {
+  .pd-header {
+    padding: 14px 20px;
+  }
+
+  .pd-container {
+    padding: 36px 20px 56px;
+  }
+
+  .pd-title {
+    font-size: 1.85rem;
+  }
+
+  .pd-card {
+    grid-template-columns: 1fr;
+  }
+
+  .pd-card-img {
+    min-height: 200px;
+    max-height: 240px;
+  }
+
+  .pd-card-body {
+    padding: 22px 20px;
+  }
+
+  .pd-meta-row {
+    grid-template-columns: 1fr;
+    gap: 3px;
+  }
+
+  .pd-footer {
+    padding: 20px;
+  }
+}

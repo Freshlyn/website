@@ -10,6 +10,7 @@ import WhyChoose from "./components/WhyChoose";
 import Footer from "./components/Footer";
 import TermsAndConditions from "./components/TermsAndConditions";
 import ManufacturingDetails from "./components/ManufacturingDetails";
+import ProductDetails from "./components/ProductDetails";
 
 function HomePage() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         <Route path="/manufacturing-details" element={<ManufacturingDetails />} />
+        <Route path="/product-details" element={<ProductDetails />} />
       </Routes>
     </BrowserRouter>
   );
